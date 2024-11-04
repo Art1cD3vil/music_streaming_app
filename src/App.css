@@ -1,38 +1,344 @@
-.App {
+/* General body styling for a dark theme */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #121212; /* Spotify's dark background */
+  color: white; /* White text color */
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Ensure the body takes full height of the viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Centering container for Login and Sign-Up pages */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Full height of the parent (body) */
+}
+
+/* Spotify-like form container */
+form {
+  background-color: #1c1c1c; /* Dark gray form background */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+  width: 350px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Form labels and input fields */
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #b3b3b3; /* Spotify's light gray text for labels */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="date"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  background-color: #333; /* Darker input field background */
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus {
+  outline: none;
+  background-color: #535353; /* Highlight on focus */
+}
+
+/* Spotify's style for buttons */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #1db954; /* Spotify green */
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px; /* Spotify's rounded button */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1ed760; /* Slightly lighter green on hover */
+}
+
+/* Error and success messages styling */
+p {
+  font-size: 14px;
+}
+
+p.error {
+  color: #e22134; /* Spotify's red for errors */
+}
+
+p.success {
+  color: #1db954; /* Spotify's green for success */
+}
+
+/* Navigation links below the button */
+nav {
+  margin-top: 20px; /* Space between button and nav */
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #b3b3b3;
+  font-size: 14px;
+}
+
+nav a:hover {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #535353; /* Subtle border above the links */
+  color: #b3b3b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-container a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+
+.nav-container a:hover {
+  color: white;
+}
+
+.home-container {
+  padding: 20px;
+  color: white;
+}
+
+.premium-feature {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.premium-feature button {
+  font-size: 14px;
+  padding: 10px 20px;
+  background-color: #1db954; /* Spotify green */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.premium-feature button:hover {
+  background-color: #18a349; /* Slightly darker green on hover */
+}
+
+
+
+/* General body styling for a dark theme */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #121212; /* Spotify's dark background */
+  color: white; /* White text color */
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Ensure the body takes full height of the viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Centering container for Login and Sign-Up pages */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Full height of the parent (body) */
+}
+
+/* Spotify-like form container */
+.form {
+  background-color: #1c1c1c; /* Dark gray form background */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+  width: 350px;
+  text-align: center;
+}
+
+/* Form labels and input fields */
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #b3b3b3; /* Spotify's light gray text for labels */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="date"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  background-color: #333; /* Darker input field background */
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus {
+  outline: none;
+  background-color: #535353; /* Highlight on focus */
+}
+
+/* Spotify's style for buttons */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #1db954; /* Spotify green */
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px; /* Spotify's rounded button */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1ed760; /* Slightly lighter green on hover */
+}
+
+/* Error and success messages styling */
+p {
+  font-size: 14px;
+}
+
+p.error {
+  color: #e22134; /* Spotify's red for errors */
+}
+
+p.success {
+  color: #1db954; /* Spotify's green for success */
+}
+
+/* Navigation links below the button */
+.nav-container {
+  margin-top: 20px; /* Space between button and nav */
+}
+
+.nav-container a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #b3b3b3;
+  font-size: 14px;
+}
+
+.nav-container a:hover {
+  color: white;
+}
+.home-container {
+  padding: 20px;
+  color: white;
+  background-color: #121212;
+}
+
+.song-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.song-item {
+  background-color: #282828;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 8px;
+  text-align: center;
+  width: 200px;
+}
+
+.song-item h3 {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.song-item p {
+  color: #b3b3b3;
+}
+
+.song-item button {
+  background-color: #1db954;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.song-item button:hover {
+  background-color: #1ed760;
+}
+.song-list {
+  margin-top: 20px;
+}
+
+.song-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.song-details audio {
+  margin-left: 10px;
+}
+.song-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.song-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.song-item h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.song-item p {
+  margin: 5px 0;
 }
